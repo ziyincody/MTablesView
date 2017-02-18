@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MTablesView_Example' do
+  pod 'MTablesView', :path => '../'
+
+  target 'MTablesView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
