@@ -1,0 +1,22 @@
+{
+  "name": "MTablesView",
+  "version": "0.1.0",
+  "summary": "A short description of MTablesView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ziyin1996@gmail.com/MTablesView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ziyin1996@gmail.com": "zy28wang@uwaterloo.ca"
+  },
+  "source": {
+    "git": "https://github.com/ziyin1996@gmail.com/MTablesView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MTablesView/Classes/**/*"
+}

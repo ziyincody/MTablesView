@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import MTablesView
 
 class ViewController: UIViewController {
 
+    var table:MTablesView = {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

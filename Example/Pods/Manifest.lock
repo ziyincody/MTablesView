@@ -1,0 +1,16 @@
+PODS:
+  - MTablesView (0.1.0)
+
+DEPENDENCIES:
+  - MTablesView (from `../`)
+
+EXTERNAL SOURCES:
+  MTablesView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MTablesView: 73772d596d7c165d4225bbf6564927b0dd3e98f4
+
+PODFILE CHECKSUM: a011264ad055a6c22886f527f5cfe5cd9b3273a2
+
+COCOAPODS: 1.2.0
