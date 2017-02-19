@@ -1,18 +1,18 @@
 {
   "name": "MTablesView",
   "version": "0.1.0",
-  "summary": "A short description of MTablesView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/ziyin1996@gmail.com/MTablesView",
+  "summary": "A UIView with multiple moveable tableviews",
+  "description": "This is created for having one UIView contains multiple tableviews to navigate between the views, and perform push segues",
+  "homepage": "https://github.com/ziyincody/MTablesView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "ziyin1996@gmail.com": "zy28wang@uwaterloo.ca"
+    "ziyinw1011@gmail.com": "ziyinw1011@gmail.com"
   },
   "source": {
-    "git": "https://github.com/ziyin1996@gmail.com/MTablesView.git",
+    "git": "https://github.com/ziyincody/MTablesView.git",
     "tag": "0.1.0"
   },
   "platforms": {

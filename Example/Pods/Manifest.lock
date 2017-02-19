@@ -2,15 +2,15 @@ PODS:
   - MTablesView (0.1.0)
 
 DEPENDENCIES:
-  - MTablesView (from `../`)
+  - MTablesView (from `/Users/ziyincody/Desktop/MTablesView`)
 
 EXTERNAL SOURCES:
   MTablesView:
-    :path: "../"
+    :path: "/Users/ziyincody/Desktop/MTablesView"
 
 SPEC CHECKSUMS:
-  MTablesView: 73772d596d7c165d4225bbf6564927b0dd3e98f4
+  MTablesView: 3c9d2b54088340a8a1fe55b1cbf999b880b410e3
 
-PODFILE CHECKSUM: a011264ad055a6c22886f527f5cfe5cd9b3273a2
+PODFILE CHECKSUM: 0694e1e604f0868a6a557f5419a47f0af0c1005f
 
 COCOAPODS: 1.2.0

@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'MTablesView_Example' do
-  pod 'MTablesView', :path => '../'
+  pod 'MTablesView', :path => '/Users/ziyincody/Desktop/MTablesView'
 
   target 'MTablesView_Tests' do
     inherit! :search_paths

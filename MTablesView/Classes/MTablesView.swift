@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 9.0, *)
-class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
+public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
 
     lazy var closeAndBackButton:UIButton = {
         let button = UIButton()
@@ -39,6 +39,7 @@ class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
     
     let topView:UIView = {
         let view = UIView()
+        view.backgroundColor = UIColor.black
         return view
     }()
     
@@ -50,9 +51,13 @@ class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
     
     var detailedData:Array<Any>?
     
-    override init(frame: CGRect)
+    public init(viewTitle:String, sectionTitles:Array<String>, mainData:Array<Array<Any>>, detailedData:Array<Any>)
     {
-        super.init(frame: frame)
+        super.init(frame: .zero)
+        self.viewTitle = viewTitle
+        self.sectionTitles = sectionTitles
+        self.mainData = mainData
+        self.detailedData = detailedData
         
         addSubview(mainTable)
         addSubview(detailedTable)
@@ -63,17 +68,15 @@ class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
         setupViews()
     }
     
-    required init?(coder aDecoder: NSCoder)
-    {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     func setupViews()
     {
-        
         topView.anchor(topAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 50)
         
-        mainTable.anchor(topView.bottomAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+//        mainTable.anchor(topView.bottomAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
     }
     
     func closeOrBack(sender:UIButton)
@@ -81,13 +84,13 @@ class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
         
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         
         return 0
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         return UITableViewCell();
     }

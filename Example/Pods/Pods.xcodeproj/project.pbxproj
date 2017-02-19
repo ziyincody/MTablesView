@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1BA19B0251B28E8F6D55085BACE630B4 /* Pods-MTablesView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E538B5E5548B5CFAC3AC38C8B7B88FCD /* Pods-MTablesView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B5331001E59039900C68E81 /* MTablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5330FF1E59039900C68E81 /* MTablesView.swift */; };
-		2B5331021E5904D500C68E81 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5331011E5904D500C68E81 /* extensions.swift */; };
-		3457174836E28926C2C5C1BC4257D5F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		3BCE74D68C897BCF38DDBDFC23EA1546 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		621A824ED466ABEF1A6411A65FB0941E /* Pods-MTablesView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD6FF7B7DF3F7E73121EA39C5707558 /* Pods-MTablesView_Tests-dummy.m */; };
 		62E7CEED44D99908F81DFFFCB4564AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		759FB380A83348FEEAB6B42D738F0166 /* MTablesView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F93FCCF953F5E6E4CA72EB73D7637595 /* MTablesView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88124C769BAD2BEF57E4B223D1972A2A /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9393A5624BFD6A8FED3BA7CA23396309 /* extensions.swift */; };
+		8B29D56B4A8BC39B60B6661C6720FF82 /* MTablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFD996D6A9B84A680EEBA54381160 /* MTablesView.swift */; };
+		99ADD21580ED17FB2D40B77B0C48CA9C /* MTablesView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C791221C0DBBCA94D0FA0414D99DB6A2 /* MTablesView-dummy.m */; };
 		C5E80FA30FDB9D623543DDC5B2F00982 /* Pods-MTablesView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 103A6CDC92E25CA1952FDC69F91C26E2 /* Pods-MTablesView_Example-dummy.m */; };
-		CE504152A58BEE07B3E004FB0EAB70C4 /* MTablesView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB4105EA6DF93C4F7619E72661DCCBAA /* MTablesView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8C214FF173EFB81D465EE6A703245B8 /* MTablesView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D31D597B18A28138C99EB7856C8463D3 /* MTablesView-dummy.m */; };
 		EDB964127B046244C89001F3A0E01A76 /* Pods-MTablesView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D33A284F206C6AC73590A04AB069CDD0 /* Pods-MTablesView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEFB9312ABD24AE7D3DC8361C7A74CC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,45 +25,45 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D96C5C87273C550CBAE0C18065699191;
+			remoteGlobalIDString = A2B182B04F072071234EB1C9D8E39402;
 			remoteInfo = MTablesView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		029BD979A2756F0F7AA72CD80898C78D /* MTablesView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MTablesView.modulemap; sourceTree = "<group>"; };
 		0C08E9F917F2466AC37BBF3F2D4D12DB /* Pods-MTablesView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTablesView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		0D01C3BFFFEE254EBFF3662F485AB243 /* Pods_MTablesView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTablesView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D01C3BFFFEE254EBFF3662F485AB243 /* Pods_MTablesView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MTablesView_Tests.framework; path = "Pods-MTablesView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		103A6CDC92E25CA1952FDC69F91C26E2 /* Pods-MTablesView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MTablesView_Example-dummy.m"; sourceTree = "<group>"; };
 		10849CD0876B36EB320D2ADB84ADACBC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23DBA0018230BD9FDA06E2F898F47D3A /* MTablesView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTablesView-prefix.pch"; sourceTree = "<group>"; };
 		26DC02FFBE4AC3A966D8D4DE7489DE1A /* Pods-MTablesView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTablesView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2B5330FF1E59039900C68E81 /* MTablesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTablesView.swift; sourceTree = "<group>"; };
-		2B5331011E5904D500C68E81 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
-		3B57621126577A23ED190A707BBB0215 /* MTablesView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MTablesView.modulemap; sourceTree = "<group>"; };
-		41469129C58832D688392A0CDA49BB69 /* Pods_MTablesView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTablesView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41469129C58832D688392A0CDA49BB69 /* Pods_MTablesView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MTablesView_Example.framework; path = "Pods-MTablesView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD5417215DB131BA6F958EEA1EB78C0 /* Pods-MTablesView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTablesView_Example-resources.sh"; sourceTree = "<group>"; };
-		620F84F08F980397AC38755388F4A5B1 /* MTablesView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MTablesView.xcconfig; sourceTree = "<group>"; };
 		663FFD015928C0619176943484496A7C /* Pods-MTablesView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTablesView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		668646CE39833D7D09BF7FF3453DB0DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		786CFD996D6A9B84A680EEBA54381160 /* MTablesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MTablesView.swift; sourceTree = "<group>"; };
 		7FCBA4CE3A5BC5993ADC257D0444CAB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86A110F5C9C0DEA373A32DEA973C2530 /* MTablesView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTablesView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A110F5C9C0DEA373A32DEA973C2530 /* MTablesView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MTablesView.framework; path = MTablesView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F8BF3547AD193206930590EEC0EC3E /* Pods-MTablesView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTablesView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		895484F9EE47064EA8E95F71D8B5C338 /* Pods-MTablesView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTablesView_Tests-resources.sh"; sourceTree = "<group>"; };
-		8B92A6A0E8F26C8811AE455FD9263F5E /* Pods-MTablesView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MTablesView_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8B92A6A0E8F26C8811AE455FD9263F5E /* Pods-MTablesView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MTablesView_Example.modulemap"; sourceTree = "<group>"; };
+		9393A5624BFD6A8FED3BA7CA23396309 /* extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9929E557E03A7578F94C81BDB86BDB27 /* MTablesView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MTablesView.xcconfig; sourceTree = "<group>"; };
 		AFD6FF7B7DF3F7E73121EA39C5707558 /* Pods-MTablesView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MTablesView_Tests-dummy.m"; sourceTree = "<group>"; };
 		B37444D0672BA26BA9E17A78784FA98B /* Pods-MTablesView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTablesView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B4868D85D993878DDD57F21DAC0E84E5 /* Pods-MTablesView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTablesView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BA40D9B66ED681D61E550F9110DB79CF /* Pods-MTablesView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MTablesView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C55F97DF127F348A52362EA2C0B83D10 /* Pods-MTablesView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MTablesView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C791221C0DBBCA94D0FA0414D99DB6A2 /* MTablesView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTablesView-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D31D597B18A28138C99EB7856C8463D3 /* MTablesView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTablesView-dummy.m"; sourceTree = "<group>"; };
 		D33A284F206C6AC73590A04AB069CDD0 /* Pods-MTablesView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MTablesView_Example-umbrella.h"; sourceTree = "<group>"; };
-		E2C3FAD063D174EFBE2BD5BDA89DD109 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E538B5E5548B5CFAC3AC38C8B7B88FCD /* Pods-MTablesView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MTablesView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E7BDDF2CDE20DDBA8A59B2FEF9E1797F /* Pods-MTablesView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTablesView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		EE2771E46BD009FE98F19E6151A96F9C /* Pods-MTablesView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MTablesView_Tests.modulemap"; sourceTree = "<group>"; };
+		EE2771E46BD009FE98F19E6151A96F9C /* Pods-MTablesView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MTablesView_Tests.modulemap"; sourceTree = "<group>"; };
 		F84E97DB5A959966B0AEE645D7D09594 /* Pods-MTablesView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTablesView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FB4105EA6DF93C4F7619E72661DCCBAA /* MTablesView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTablesView-umbrella.h"; sourceTree = "<group>"; };
+		F93FCCF953F5E6E4CA72EB73D7637595 /* MTablesView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTablesView-umbrella.h"; sourceTree = "<group>"; };
+		FB4739CB08B8DF3BC8644C267E6491C4 /* MTablesView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTablesView-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,14 +75,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9618F5F62EE82FDD06C962C828C85861 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3457174836E28926C2C5C1BC4257D5F2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BFCE11677BF26888592659C4496B2408 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,15 +83,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E66BBD734081EDA23C623DD02D308F14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFB9312ABD24AE7D3DC8361C7A74CC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		144E26FCAB682E71E6864B1B286E2363 /* Development Pods */ = {
+		0AAC8A0E1BE2F42E0BDF01B2FA377A68 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C0459915A62F5F337CA34E5AE1615B46 /* MTablesView */,
+				9393A5624BFD6A8FED3BA7CA23396309 /* extensions.swift */,
+				786CFD996D6A9B84A680EEBA54381160 /* MTablesView.swift */,
 			);
-			name = "Development Pods";
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		2803F96AFD2A6849980E93CE383A2EBA /* Products */ = {
@@ -130,6 +132,38 @@
 			path = "Target Support Files/Pods-MTablesView_Example";
 			sourceTree = "<group>";
 		};
+		5BE4F145F7B26EBAC5321F9069E8344C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				668646CE39833D7D09BF7FF3453DB0DC /* Info.plist */,
+				029BD979A2756F0F7AA72CD80898C78D /* MTablesView.modulemap */,
+				9929E557E03A7578F94C81BDB86BDB27 /* MTablesView.xcconfig */,
+				C791221C0DBBCA94D0FA0414D99DB6A2 /* MTablesView-dummy.m */,
+				FB4739CB08B8DF3BC8644C267E6491C4 /* MTablesView-prefix.pch */,
+				F93FCCF953F5E6E4CA72EB73D7637595 /* MTablesView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MTablesView";
+			sourceTree = "<group>";
+		};
+		67C0BA9256396A3B6BFC86838E4542B2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A1EC26E3D9E1B7C69CAFFF033354A02 /* MTablesView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6A1EC26E3D9E1B7C69CAFFF033354A02 /* MTablesView */ = {
+			isa = PBXGroup;
+			children = (
+				84D980F4FD7716DA30BF21B59E7C5F4C /* MTablesView */,
+				5BE4F145F7B26EBAC5321F9069E8344C /* Support Files */,
+			);
+			name = MTablesView;
+			path = /Users/ziyincody/Desktop/MTablesView;
+			sourceTree = "<absolute>";
+		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,11 +176,20 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				144E26FCAB682E71E6864B1B286E2363 /* Development Pods */,
+				67C0BA9256396A3B6BFC86838E4542B2 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				2803F96AFD2A6849980E93CE383A2EBA /* Products */,
 				9DFB84D06674622657A39D76A3437B17 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		84D980F4FD7716DA30BF21B59E7C5F4C /* MTablesView */ = {
+			isa = PBXGroup;
+			children = (
+				0AAC8A0E1BE2F42E0BDF01B2FA377A68 /* Classes */,
+			);
+			name = MTablesView;
+			path = MTablesView;
 			sourceTree = "<group>";
 		};
 		9DFB84D06674622657A39D76A3437B17 /* Targets Support Files */ = {
@@ -158,53 +201,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9EDF86C47D7ABE0EB1F0CB7AA77E07C2 /* MTablesView */ = {
-			isa = PBXGroup;
-			children = (
-				D6B89D6DAFE39529F5795840574D9DA9 /* Classes */,
-			);
-			path = MTablesView;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C0459915A62F5F337CA34E5AE1615B46 /* MTablesView */ = {
-			isa = PBXGroup;
-			children = (
-				9EDF86C47D7ABE0EB1F0CB7AA77E07C2 /* MTablesView */,
-				E2D2B2F55A4CFF3BC9B1F4517BB3A5B9 /* Support Files */,
-			);
-			name = MTablesView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		D6B89D6DAFE39529F5795840574D9DA9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2B5330FF1E59039900C68E81 /* MTablesView.swift */,
-				2B5331011E5904D500C68E81 /* extensions.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		E2D2B2F55A4CFF3BC9B1F4517BB3A5B9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E2C3FAD063D174EFBE2BD5BDA89DD109 /* Info.plist */,
-				3B57621126577A23ED190A707BBB0215 /* MTablesView.modulemap */,
-				620F84F08F980397AC38755388F4A5B1 /* MTablesView.xcconfig */,
-				D31D597B18A28138C99EB7856C8463D3 /* MTablesView-dummy.m */,
-				23DBA0018230BD9FDA06E2F898F47D3A /* MTablesView-prefix.pch */,
-				FB4105EA6DF93C4F7619E72661DCCBAA /* MTablesView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MTablesView";
 			sourceTree = "<group>";
 		};
 		E75CEA77989452E403D071672ED11FEB /* Pods-MTablesView_Tests */ = {
@@ -236,19 +238,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18B209089BE69B44CE7C9DD111DAE012 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759FB380A83348FEEAB6B42D738F0166 /* MTablesView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C8ABCC1F8D8C65DFCC2D63DE18D85A3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EDB964127B046244C89001F3A0E01A76 /* Pods-MTablesView_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		58A47A510F665214959BD0CE62BE610C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE504152A58BEE07B3E004FB0EAB70C4 /* MTablesView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +274,13 @@
 			productReference = 0D01C3BFFFEE254EBFF3662F485AB243 /* Pods_MTablesView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D96C5C87273C550CBAE0C18065699191 /* MTablesView */ = {
+		A2B182B04F072071234EB1C9D8E39402 /* MTablesView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56A341BD3B0550B8D72A27ED0C8E38CE /* Build configuration list for PBXNativeTarget "MTablesView" */;
+			buildConfigurationList = E826D84609467020162B7006512483FD /* Build configuration list for PBXNativeTarget "MTablesView" */;
 			buildPhases = (
-				D130E030322EA5F710AE786018EF26A2 /* Sources */,
-				9618F5F62EE82FDD06C962C828C85861 /* Frameworks */,
-				58A47A510F665214959BD0CE62BE610C /* Headers */,
+				86F79AD66A611CF51A8D1EB3949C7FEE /* Sources */,
+				E66BBD734081EDA23C623DD02D308F14 /* Frameworks */,
+				18B209089BE69B44CE7C9DD111DAE012 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -315,14 +317,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					D96C5C87273C550CBAE0C18065699191 = {
-						LastSwiftMigration = 0820;
-					};
-					F5CC13020206D20615C5741381A5F7A1 = {
-						LastSwiftMigration = 0820;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -336,7 +330,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D96C5C87273C550CBAE0C18065699191 /* MTablesView */,
+				A2B182B04F072071234EB1C9D8E39402 /* MTablesView */,
 				F5CC13020206D20615C5741381A5F7A1 /* Pods-MTablesView_Example */,
 				8BF602894E72458FDC27962867F3E26E /* Pods-MTablesView_Tests */,
 			);
@@ -344,21 +338,21 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		86F79AD66A611CF51A8D1EB3949C7FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88124C769BAD2BEF57E4B223D1972A2A /* extensions.swift in Sources */,
+				99ADD21580ED17FB2D40B77B0C48CA9C /* MTablesView-dummy.m in Sources */,
+				8B29D56B4A8BC39B60B6661C6720FF82 /* MTablesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87226F7DB58B0DD45ED9E6F72213F786 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				621A824ED466ABEF1A6411A65FB0941E /* Pods-MTablesView_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D130E030322EA5F710AE786018EF26A2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8C214FF173EFB81D465EE6A703245B8 /* MTablesView-dummy.m in Sources */,
-				2B5331001E59039900C68E81 /* MTablesView.swift in Sources */,
-				2B5331021E5904D500C68E81 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,12 +370,44 @@
 		02A6BEDE9EF04B65A9EA049D811A0002 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MTablesView;
-			target = D96C5C87273C550CBAE0C18065699191 /* MTablesView */;
+			target = A2B182B04F072071234EB1C9D8E39402 /* MTablesView */;
 			targetProxy = 90684F0E46504F367E4A1AF2C516ADFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		58FBBDB6EA57D6EB2BC003F3E05AC218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9929E557E03A7578F94C81BDB86BDB27 /* MTablesView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MTablesView/MTablesView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MTablesView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MTablesView/MTablesView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MTablesView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7426D68ECD3552C02AB48C7F6850BB2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B37444D0672BA26BA9E17A78784FA98B /* Pods-MTablesView_Example.release.xcconfig */;
@@ -411,7 +437,6 @@
 				PRODUCT_NAME = Pods_MTablesView_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -532,18 +557,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		CA48D5A56ADBA4FC3A9D297A86D4755A /* Debug */ = {
+		AB665553A65857BE480EF23C4ADD6264 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 620F84F08F980397AC38755388F4A5B1 /* MTablesView.xcconfig */;
+			baseConfigurationReference = 9929E557E03A7578F94C81BDB86BDB27 /* MTablesView.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -608,39 +631,6 @@
 			};
 			name = Debug;
 		};
-		E43C657CB3D10F3690CA1E94FC1C4A92 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 620F84F08F980397AC38755388F4A5B1 /* MTablesView.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MTablesView/MTablesView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MTablesView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MTablesView/MTablesView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MTablesView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		F5A0FE983AB7443BCA91C0580EE14C2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F84E97DB5A959966B0AEE645D7D09594 /* Pods-MTablesView_Tests.release.xcconfig */;
@@ -688,20 +678,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56A341BD3B0550B8D72A27ED0C8E38CE /* Build configuration list for PBXNativeTarget "MTablesView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CA48D5A56ADBA4FC3A9D297A86D4755A /* Debug */,
-				E43C657CB3D10F3690CA1E94FC1C4A92 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		928594313CCB7B2FDC083B6207463C5E /* Build configuration list for PBXNativeTarget "Pods-MTablesView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DB2686537BCA920AC2A699A912524731 /* Debug */,
 				F5A0FE983AB7443BCA91C0580EE14C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E826D84609467020162B7006512483FD /* Build configuration list for PBXNativeTarget "MTablesView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB665553A65857BE480EF23C4ADD6264 /* Debug */,
+				58FBBDB6EA57D6EB2BC003F3E05AC218 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
