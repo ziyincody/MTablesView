@@ -9,17 +9,19 @@
 import UIKit
 import MTablesView
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,MTableViewDelegate {
 
     var bottomAnchor:NSLayoutConstraint?
     var viewHalfHeight:CGFloat = 0
     
     var sectionTitles = ["ABC", "BCD", "CDE"]
     
-    var mainData = [["ABC","ABC","ABC"], ["BCD","BCD","BCD"], ["CDE","CDE","CDE"]]
-    
+    var mainData = [["ABC","BCD","CDE"],["ABC","BCD","CDE"]]
+    var detailedData = [[["ABC","ABC"],["BCD","BCD"],["CDE","CDE"]],[["ABC","ABC"],["BCD","BCD"],["CDE","CDE"]]]
+        
     lazy var mainView:MTablesView = {
-        let mTable = MTablesView(viewTitle: "Hi", sectionTitles: self.sectionTitles, mainData: self.mainData, detailedData: [])
+        let mTable = MTablesView(viewTitle: "Hi", sectionTitles: self.sectionTitles, mainData: self.mainData, detailedData: self.detailedData)
+        mTable.delegate = self
         return mTable
     }()
     
@@ -43,7 +45,7 @@ class ViewController: UIViewController {
     {
         view.addSubview(mainView)
         
-        viewHalfHeight = self.view.frame.size.height / 2
+        viewHalfHeight = self.view.frame.size.height / 1.5
         
         let anchors = mainView.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, centerX:nil, centerY:nil, topConstant: 0, leftConstant: 0, bottomConstant: viewHalfHeight, rightConstant: 0, widthConstant: 0, heightConstant: viewHalfHeight)
         bottomAnchor = anchors[0]
@@ -66,6 +68,10 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.5) { 
             self.view.layoutIfNeeded()
         }
+    }
+    
+    func moveBackView() {
+        
     }
 
 }

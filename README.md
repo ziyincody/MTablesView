@@ -22,7 +22,7 @@ pod "MTablesView"
 
 ## Author
 
-ziyin1996@gmail.com, zy28wang@uwaterloo.ca
+ziyinw1011@gmail.com
 
 ## License
 
