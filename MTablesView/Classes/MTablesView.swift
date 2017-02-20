@@ -103,7 +103,7 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
     
     func setupViews()
     {
-        topView.anchor(topAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 50)
+        _ = topView.anchor(topAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 50)
         
         closeAndBackButton.translatesAutoresizingMaskIntoConstraints = false
         closeAndBackButton.centerYAnchor.constraint(equalTo: topView.centerYAnchor).isActive = true
@@ -116,7 +116,7 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
         mainTable.widthAnchor.constraint(equalTo: widthAnchor, constant: 0).isActive = true
         mainTable.heightAnchor.constraint(equalTo: heightAnchor, constant: -topView.frame.size.height).isActive = true
         
-        detailedTable.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+        _ = detailedTable.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
         detailedTable.widthAnchor.constraint(equalTo: widthAnchor, constant: 0).isActive = true
         bringSubview(toFront: mainTable)
         bringSubview(toFront: topView)
