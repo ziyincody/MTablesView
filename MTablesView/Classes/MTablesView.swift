@@ -11,6 +11,25 @@ import UIKit
 @available(iOS 9.0, *)
 public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
     
+    public enum tableSegueDirection {
+        case left
+        case right
+        case top
+        case bottom
+    }
+    
+    public var segueDirection:tableSegueDirection = .left
+        {
+        didSet
+        {
+            setupSegueDirection()
+        }
+    }
+    
+    public var selectingOption:Bool = false
+    
+    public var delegate:MTableViewDelegate?
+    
     lazy var closeAndBackButton:UIButton = {
         let button = UIButton()
         button.addTarget(self, action: #selector(closeOrBack(sender:)), for: .touchUpInside)
@@ -48,8 +67,6 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
         return view
     }()
     
-    var viewTitle:String?
-    
     var sectionTitles:Array<String>?
     
     var mainData:[[String]]?
@@ -58,16 +75,14 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
     
     var selectedDetailData:[String]?
     
-    var tableLeftAnchor:NSLayoutConstraint?
-    
-    public var selectingOption:Bool = false
-    
-    public var delegate:MTableViewDelegate?
+    var tableMovingAnchor:NSLayoutConstraint?
+
+    var anchors:[NSLayoutConstraint] = []
     
     public init(viewTitle:String, sectionTitles:Array<String>, mainData:[[String]]?, detailedData:[[[String]]]?)
     {
         super.init(frame: .zero)
-        self.viewTitle = viewTitle
+        self.titleLabel.text = viewTitle
         self.sectionTitles = sectionTitles
         self.mainData = mainData
         self.detailedData = detailedData
@@ -79,6 +94,7 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
         topView.addSubview(closeAndBackButton)
         
         setupViews()
+        setupSegueDirection()
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -96,14 +112,24 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
         titleLabel.centerXAnchor.constraint(equalTo: topView.centerXAnchor).isActive = true
         titleLabel.centerYAnchor.constraint(equalTo: topView.centerYAnchor).isActive = true
         
-        let anchors = mainTable.anchor(topView.bottomAnchor, left: leftAnchor, bottom: bottomAnchor, right:nil, topConstant: -20, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+        anchors = mainTable.anchor(topView.bottomAnchor, left: leftAnchor, bottom: nil, right:nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
         mainTable.widthAnchor.constraint(equalTo: widthAnchor, constant: 0).isActive = true
-        tableLeftAnchor = anchors[2]
+        mainTable.heightAnchor.constraint(equalTo: heightAnchor, constant: -topView.frame.size.height).isActive = true
         
-        detailedTable.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: nil, topConstant: -20, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+        detailedTable.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: nil, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
         detailedTable.widthAnchor.constraint(equalTo: widthAnchor, constant: 0).isActive = true
         bringSubview(toFront: mainTable)
         bringSubview(toFront: topView)
+    }
+    
+    func setupSegueDirection()
+    {
+        switch segueDirection {
+        case .top,.bottom:
+            tableMovingAnchor = anchors[0]
+        case .left,.right:
+            tableMovingAnchor = anchors[1]
+        }
     }
     
     func closeOrBack(sender:UIButton)
@@ -202,17 +228,28 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
     
     private func moveTable()
     {
-        tableLeftAnchor?.isActive = false
+        tableMovingAnchor?.isActive = false
         if closeAndBackButton.currentTitle == "Back"
         {
-            tableLeftAnchor?.constant = -frame.size.width
+            var anchorConstant:CGFloat = 0
+            switch segueDirection {
+            case .top:
+                anchorConstant = -frame.size.height
+            case .left:
+                anchorConstant = -frame.size.width
+            case .right:
+                anchorConstant = frame.size.width
+            case .bottom:
+                anchorConstant = frame.size.height
+            }
+            tableMovingAnchor?.constant = anchorConstant
         }
         else if closeAndBackButton.currentTitle == "Done"
         {
             mainTable.deselectRow(at: mainTable.indexPathForSelectedRow!, animated: true)
-            tableLeftAnchor?.constant = 0
+            tableMovingAnchor?.constant = 0
         }
-        tableLeftAnchor?.isActive = true
+        tableMovingAnchor?.isActive = true
         UIView.animate(withDuration: 0.5, animations: {
             self.layoutIfNeeded()
         })

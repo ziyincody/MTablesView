@@ -22,7 +22,6 @@ class MainTableCell: UITableViewCell {
     {
         didSet
         {
-            print(selectedOption)
             setupLabels()
             optionLabel.text = selectedOption
         }

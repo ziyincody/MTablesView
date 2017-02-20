@@ -23,6 +23,7 @@ class ViewController: UIViewController,MTableViewDelegate {
         let mTable = MTablesView(viewTitle: "Hi", sectionTitles: self.sectionTitles, mainData: self.mainData, detailedData: self.detailedData)
         mTable.delegate = self
         mTable.selectingOption = true
+        mTable.segueDirection = .bottom
         return mTable
     }()
     
