@@ -22,6 +22,7 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
     var titleLabel:UILabel = {
         let label = UILabel()
         label.text = "TITLE"
+        label.textColor = UIColor.white
         return label
     }()
     
@@ -58,6 +59,8 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
     var selectedDetailData:[String]?
     
     var tableLeftAnchor:NSLayoutConstraint?
+    
+    public var selectingOption:Bool = false
     
     public var delegate:MTableViewDelegate?
     
@@ -166,6 +169,10 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
             if let data = mainData?[indexPath.section]
             {
                 cell.textLabel?.text = data[indexPath.row]
+            }
+            if selectingOption
+            {
+                cell.selectedOption = detailedData?[indexPath.section][indexPath.row][0]
             }
             return cell;
         }

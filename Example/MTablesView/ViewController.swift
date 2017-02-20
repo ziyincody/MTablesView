@@ -22,6 +22,7 @@ class ViewController: UIViewController,MTableViewDelegate {
     lazy var mainView:MTablesView = {
         let mTable = MTablesView(viewTitle: "Hi", sectionTitles: self.sectionTitles, mainData: self.mainData, detailedData: self.detailedData)
         mTable.delegate = self
+        mTable.selectingOption = true
         return mTable
     }()
     
