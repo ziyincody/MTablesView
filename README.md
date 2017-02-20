@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Need project > iOS 9.0 for NSLayoutAnchor to work
+
 ## Installation
 
 MTablesView is available through [CocoaPods](http://cocoapods.org). To install
@@ -19,6 +21,26 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "MTablesView"
 ```
+
+## Implementation
+
+```Swift
+    var sectionTitles = ["ABC", "BCD", "CDE"]
+
+    var mainData = [["ABC","BCD","CDE"],["ABC","BCD","CDE"]]
+    var detailedData = [[["ABC","ABC"],["BCD","BCD"],["CDE","CDE"]],[["ABC","ABC"],["BCD","BCD"],["CDE","CDE"]]]
+
+    lazy var mainView:MTablesView = {
+    let mTable = MTablesView(viewTitle: "Hi", sectionTitles: self.sectionTitles, mainData: self.mainData, detailedData: self.detailedData)
+        mTable.delegate = self
+        mTable.selectingOption = true
+        mTable.segueDirection = .top
+        return mTable
+    }()
+```
+
+## ScreenShots
+
 
 ## Author
 
