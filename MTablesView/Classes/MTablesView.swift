@@ -229,6 +229,7 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
     private func moveTable()
     {
         tableMovingAnchor?.isActive = false
+        var moveOut = true
         if closeAndBackButton.currentTitle == "Back"
         {
             var anchorConstant:CGFloat = 0
@@ -243,14 +244,24 @@ public class MTablesView: UIView,UITableViewDelegate,UITableViewDataSource {
                 anchorConstant = frame.size.height
             }
             tableMovingAnchor?.constant = anchorConstant
+            
         }
         else if closeAndBackButton.currentTitle == "Done"
         {
             mainTable.deselectRow(at: mainTable.indexPathForSelectedRow!, animated: true)
             tableMovingAnchor?.constant = 0
+            moveOut = false
         }
         tableMovingAnchor?.isActive = true
         UIView.animate(withDuration: 0.5, animations: {
+            if moveOut
+            {
+                self.mainTable.alpha = 0
+            }
+            else
+            {
+                self.mainTable.alpha = 1
+            }
             self.layoutIfNeeded()
         })
     }
