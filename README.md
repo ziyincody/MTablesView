@@ -40,7 +40,7 @@ pod "MTablesView"
 ```
 
 ## ScreenShots
-![Alt text](/Users/ziyincody/Desktop/topSegue "Top Segue")
+![Top Segue](/Screenshots/topSegue.gif "Top Segue")
 
 ## Author
 
