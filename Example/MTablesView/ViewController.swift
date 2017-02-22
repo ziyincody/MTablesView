@@ -18,12 +18,14 @@ class ViewController: UIViewController,MTableViewDelegate {
     
     var mainData = [["ABC","BCD","CDE"],["ABC","BCD","CDE"]]
     var detailedData = [[["ABC","ABC"],["BCD","BCD"],["CDE","CDE"]],[["ABC","ABC"],["BCD","BCD"],["CDE","CDE"]]]
+    
+    var barButton:UIBarButtonItem?
         
     lazy var mainView:MTablesView = {
         let mTable = MTablesView(viewTitle: "Hi", sectionTitles: self.sectionTitles, mainData: self.mainData, detailedData: self.detailedData)
         mTable.delegate = self
         mTable.selectingOption = true
-        mTable.segueDirection = .bottom
+        mTable.segueDirection = .right
         return mTable
     }()
     
@@ -32,7 +34,7 @@ class ViewController: UIViewController,MTableViewDelegate {
         view.backgroundColor = UIColor.white
         
         self.title = "Demo"
-        let barButton = UIBarButtonItem(title: "Show", style: .plain, target: self, action: #selector(showTable(sender: )))
+        barButton = UIBarButtonItem(title: "Show", style: .plain, target: self, action: #selector(showTable(sender: )))
         
         self.navigationItem.rightBarButtonItem = barButton
     }
@@ -72,9 +74,9 @@ class ViewController: UIViewController,MTableViewDelegate {
         }
     }
     
-    func moveBackView() {
-        
+    func moveBackView()
+    {
+        showTable(sender: barButton!)
     }
-
 }
 

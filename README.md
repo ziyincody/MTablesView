@@ -40,7 +40,14 @@ pod "MTablesView"
 ```
 
 ## ScreenShots
+```Swift
+mTable.segueDirection = .top
+```
 ![Top Segue](/Screenshots/topSegue.gif "Top Segue")
+```Swift
+mTable.segueDirection = .right
+```
+![Right Segue](/Screenshots/rightSegue.gif "Right Segue")
 
 ## Author
 
