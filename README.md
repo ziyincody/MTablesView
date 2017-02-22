@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/MTablesView.svg?style=flat)](http://cocoapods.org/pods/MTablesView)
 [![Platform](https://img.shields.io/cocoapods/p/MTablesView.svg?style=flat)](http://cocoapods.org/pods/MTablesView)
 
+A customized view that contains two tableviews. It allows customized segue between the views. By using this view, it enables similar functionality as a viewcontroller but with any frame size.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -31,11 +33,11 @@ pod "MTablesView"
     var detailedData = [[["ABC","ABC"],["BCD","BCD"],["CDE","CDE"]],[["ABC","ABC"],["BCD","BCD"],["CDE","CDE"]]]
 
     lazy var mainView:MTablesView = {
-    let mTable = MTablesView(viewTitle: "Hi", sectionTitles: self.sectionTitles, mainData: self.mainData, detailedData: self.detailedData)
-        mTable.delegate = self
-        mTable.selectingOption = true
-        mTable.segueDirection = .top
-        return mTable
+        let mTable = MTablesView(viewTitle: "Hi", sectionTitles: self.sectionTitles, mainData: self.mainData, detailedData: self.detailedData)
+            mTable.delegate = self
+            mTable.selectingOption = true
+            mTable.segueDirection = .top
+            return mTable
     }()
 ```
 
